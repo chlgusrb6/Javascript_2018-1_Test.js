@@ -66,3 +66,10 @@ function fun(){
       fun();
       alert(b);
 이 코드에서 함수안에선 b가 20이고 함수밖에서 b호출한것은 10이 된다
+
+
+•변수가 null인지 비교: var a;  a == null;
+•변수는 member(property)를 동적으로 추가할 수 있음: var a;  a.x = 10;    // 오동작
+•= new와 =의 차이
+◦= new는 prototype 이용해 새롭게 객체를 생성
+◦=는 reference로 접근

@@ -5,15 +5,17 @@
 <body>
     This is a test.
   <script>
-      var a = 10;
-      function fun(){
-          for (var i = 0; i < 10; i ++){
-              a += 10;
-              var b = 20;
-          }
-      }
-      fun();
+      /*var a = new Date();
+      var b = a;
       alert(a);
-  </script>
+      alert(b);*/
+      var a = [ 'a','b','c','d'];
+      var b = ['z'];
+     a.unshift('zero');
+     a.reverse();
+     b.concat(['a']);
+      alert(a);
+      alert(b);
+   </script>
 </body>
 </html>
