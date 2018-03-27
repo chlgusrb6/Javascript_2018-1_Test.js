@@ -14,6 +14,10 @@
       var d = {};
       a.a='abc';
       delete a.x;
+      for( key in a ){
+          document.write(key + ' = ' + a[key] + '<br>');
+      }
+      alert(this.a.a);
    </script>
 </body>
 </html>
