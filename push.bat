@@ -1,3 +1,3 @@
 git add --all
-git commit -m "Javascript_2018-1_Test.js 최종파일"
+git commit -m "Javascript_2018-1_Test.js java 문법"
 git push -u origin master

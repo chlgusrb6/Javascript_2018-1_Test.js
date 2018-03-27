@@ -1,17 +1,19 @@
+ï»¿<Git hub>
+
 git init
 git remote add origin "--"
 git add -all
 git commit -m "--"
 git push -u origin master
 
--m Àº ¸Ş¼¼Áö
--u Àº ¾÷µ¥ÀÌÆ®
-master = ºê·»Ä¡ ÀÌ¸§ »ç¿ëÀÚ¶ó°í º¸¸éµÊ.
+-m ì€ ë©”ì„¸ì§€
+-u ì€ ì—…ë°ì´íŠ¸
+master = ë¸Œë Œì¹˜ ì´ë¦„ ì‚¬ìš©ìë¼ê³  ë³´ë©´ë¨.
 
 
-[GitHub¿¡ Source Code ÀúÀåÇÏ±â]
+[GitHubì— Source Code ì €ì¥í•˜ê¸°]
 
-- Source code°¡ ÀÖ´Â folder·Î ÀÌµ¿ÇÑ ÈÄ, ¾Æ·¡ °úÁ¤À» Â÷·Ê·Î ½ÇÇà
+- Source codeê°€ ìˆëŠ” folderë¡œ ì´ë™í•œ í›„, ì•„ë˜ ê³¼ì •ì„ ì°¨ë¡€ë¡œ ì‹¤í–‰
 
 git init
 git remote add origin <repository location>
@@ -19,19 +21,48 @@ git add --all
 git commit -m "first commit"
 git push -u origin master
 
-[GitHub¿¡¼­ Source Code °¡Á®¿À±â]
+[GitHubì—ì„œ Source Code ê°€ì ¸ì˜¤ê¸°]
 
-- Source code¸¦ ÀúÀåÇÒ folder¸¦ ¸ÕÀú ¸¸µé¾î ±× folder·Î ÀÌµ¿ÇÑ ÈÄ, ¾Æ·¡ °úÁ¤À» Â÷·Ê·Î ½ÇÇà
+- Source codeë¥¼ ì €ì¥í•  folderë¥¼ ë¨¼ì € ë§Œë“¤ì–´ ê·¸ folderë¡œ ì´ë™í•œ í›„, ì•„ë˜ ê³¼ì •ì„ ì°¨ë¡€ë¡œ ì‹¤í–‰
 
 git init
 git remote add origin <repository location>
 git fetch --all
 git checkout -t remotes/origin/master
 
-var myHeading = document.querySelector('h1');
-h1 À» °¡Á®¿À´Â°Í html ÆÄÀÏ¾È¿¡ h1
+<Javascript>
 
-alert(); À¥ÆäÀÌÁö ½ÃÀÛ½Ã °æ°í¸Ş¼¼Áö Ãâ·Â ¸í·É¹®
+var myHeading = document.querySelector('h1');
+h1 ì„ ê°€ì ¸ì˜¤ëŠ”ê²ƒ html íŒŒì¼ì•ˆì— h1
+
+alert(); ì›¹í˜ì´ì§€ ì‹œì‘ì‹œ ê²½ê³ ë©”ì„¸ì§€ ì¶œë ¥ ëª…ë ¹ë¬¸
 
 document.querySelector('html').onclick = function (){}
-¿©±â¼­ º¸¸é function ¿¡ ÀÌ¸§À» Á¤ÀÇÇÏÁö¾Ê°í default function À» ÀÎÁ¤ÇØÁØ´Ù ÀÚ¹Ù½ºÅ©¸³Æ®´Â
+ì—¬ê¸°ì„œ ë³´ë©´ function ì— ì´ë¦„ì„ ì •ì˜í•˜ì§€ì•Šê³  default function ì„ ì¸ì •í•´ì¤€ë‹¤ ìë°”ìŠ¤í¬ë¦½íŠ¸ëŠ”
+
+ê°ì²´ <-> ì£¼ì²´
+ê°ì²´ : object ë‚´ê°€ ì›í•˜ëŠ” ì¼ì„í•  ì½”ë“œ ì§‘í•©ì²´
+ì£¼ì²´ : you ë„ˆ ë§ê·¸ëŒ€ë¡œ ì§ì ‘ ì½”ë”©
+ê°ì²´ ì•ˆì— í•¨ìˆ˜ë¼ëŠ”ê²ƒì´ ì¡´ì¬í•œë‹¤. (í•¨ìˆ˜ function)
+
+ë³€ìˆ˜ ì„ ì–¸
+â€¢ì„ ì–¸: var a = 10;  // aê°€ ë‘ ë²ˆ ì„ ì–¸ë˜ì–´ë„ ë¬¸ì œ ì—†ìŒ
+â€¢ì—„ê²©í•œ ì„ ì–¸: let a = 10;  // aê°€ ë‘ ë²ˆ ì„ ì–¸ë˜ë©´ error (ì¤‘ê°„ ë³€ê²½ ê°€ëŠ¥)
+â€¢ìƒìˆ˜ ì„ ì–¸: const a = 10;  // aì— ê°’ì´ ë‹¤ì‹œ í• ë‹¹ë˜ë©´ error (ì¤‘ê°„ ë³€ê²½ë„ ë¶ˆê°€)
+
+â€¢Function ë‚´ì—ì„œ ì„ ì–¸ëœ ë³€ìˆ˜ëŠ” function ë²”ìœ„ ë‚´ì—ì„œ í•­ìƒ ì ‘ê·¼ ê°€ëŠ¥, Javaì™€ ë‹¤ë¥´ê²Œ {...} ë²”ìœ„ê°€ ì•„ë‹Œ function ë²”ìœ„ê°€ ìœ íš¨ ë²”ìœ„ê°€ ë¨
+function ë°–ì—ì„œ function ì•ˆì— ì„ ì–¸ëœ ë³€ìˆ˜ë¥¼ í˜¸ì¶œí•˜ë©´ ì‚¬ìš©ì´ ë¶ˆê°€ëŠ¥í•˜ë‹¤ -> ìœ íš¨ë²”ìœ„ê°€ ì¡´ì¬í•˜ê¸° ë•Œë¬¸ì—!
+
+function fun(){
+          var a = 10;
+          for (var i = 0; i < 10; i ++){
+              a += 10;
+              var b = 20;
+          }
+          alert(a);
+          alert(b);
+      }
+      let b = 10;
+      fun();
+      alert(b);
+ì´ ì½”ë“œì—ì„œ í•¨ìˆ˜ì•ˆì—ì„  bê°€ 20ì´ê³  í•¨ìˆ˜ë°–ì—ì„œ bí˜¸ì¶œí•œê²ƒì€ 10ì´ ëœë‹¤
