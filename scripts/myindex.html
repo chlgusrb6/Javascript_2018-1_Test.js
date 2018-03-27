@@ -5,19 +5,12 @@
 <body>
     This is a test.
   <script>
-      /*var a = new Date();
-      var b = a;
-      alert(a);
-      alert(b);*/
-      var a = {x:10 , y:20, z:30};
-      var c = new Object();
-      var d = {};
-      a.a='abc';
-      delete a.x;
-      for( key in a ){
-          document.write(key + ' = ' + a[key] + '<br>');
+      function myFun(arg1,arg2){
+          alert(arguments.length);
+          return arg1 + arg2;
       }
-      alert(this.a.a);
+      var a = myFun('abc','xyz','123');
+      alert(myFun.length);
    </script>
 </body>
 </html>

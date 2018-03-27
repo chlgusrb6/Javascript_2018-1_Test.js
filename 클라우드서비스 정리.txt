@@ -73,3 +73,23 @@ function fun(){
 •= new와 =의 차이
 ◦= new는 prototype 이용해 새롭게 객체를 생성
 ◦=는 reference로 접근
+
+var a = 'abc';
+      var b = a.toLocaleUpperCase();
+      var size = b.length;
+    
+      alert(b + " with size = " + size);
+대문자 변경과 텍스트 사이즈 측정
+
+
+var a = {x:10 , y:20, z:30};
+      var c = new Object();
+      var d = {};
+      a.a='abc';
+      delete a.x;
+      for( key in a ){
+          document.write(key + ' = ' + a[key] + '<br>');
+      }
+      alert(this.a.a);
+
+다양한접근법
