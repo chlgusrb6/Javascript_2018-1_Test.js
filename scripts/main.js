@@ -18,4 +18,17 @@ function getIdPw(){
     getIdPw();
     }
 }
-getIdPw();   
+
+document.querySelector('h1').onclick = function (){
+    getIdPw();
+}
+var myImage = document.querySelector('img');
+myImage.onclick = function (){
+    var src = myImage.getAttribute('src');
+    if(src === 'images/firefox-icon.png'){
+        myImage.setAttribute('src','images/mokwon.png');
+    }
+    else{
+        myImage.setAttribute('src','images/firefox-icon.png');
+    }
+}

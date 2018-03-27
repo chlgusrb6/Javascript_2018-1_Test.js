@@ -1,0 +1,37 @@
+git init
+git remote add origin "--"
+git add -all
+git commit -m "--"
+git push -u origin master
+
+-m 은 메세지
+-u 은 업데이트
+master = 브렌치 이름 사용자라고 보면됨.
+
+
+[GitHub에 Source Code 저장하기]
+
+- Source code가 있는 folder로 이동한 후, 아래 과정을 차례로 실행
+
+git init
+git remote add origin <repository location>
+git add --all
+git commit -m "first commit"
+git push -u origin master
+
+[GitHub에서 Source Code 가져오기]
+
+- Source code를 저장할 folder를 먼저 만들어 그 folder로 이동한 후, 아래 과정을 차례로 실행
+
+git init
+git remote add origin <repository location>
+git fetch --all
+git checkout -t remotes/origin/master
+
+var myHeading = document.querySelector('h1');
+h1 을 가져오는것 html 파일안에 h1
+
+alert(); 웹페이지 시작시 경고메세지 출력 명령문
+
+document.querySelector('html').onclick = function (){}
+여기서 보면 function 에 이름을 정의하지않고 default function 을 인정해준다 자바스크립트는
