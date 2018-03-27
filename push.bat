@@ -1,3 +1,3 @@
 git add --all
-git commit -m "Javascript_2018-1_Test.js login"
+git commit -m "Javascript_2018-1_Test.js final login"
 git push -u origin master
