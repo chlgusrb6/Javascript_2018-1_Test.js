@@ -2,7 +2,7 @@
 var id = prompt('ID 입력:','');
 var ps = prompt('PS 입력:','');
 
-if(ps === '940208')
+if(id==='choi' && ps === '940208')
 {
     alert('안녕하세요 최현규님 환영합니다.')
     alert(id + '가 로그인함.');
@@ -14,10 +14,10 @@ if(ps === '940208')
     var b = a*aa;
     var iceCream = 'chocolate';
 }
-else if(ps==='')
+else if(id==='' && ps==='')
 {
-    alert('비밀번호를 입력하세요.');
+    alert('아이디 또는 비밀번호를 입력하세요.');
 }
 else{
-    alert('비밀번호가 틀렸습니다.');
+    alert('아이디 또는 비밀번호가 틀렸습니다.');
 }
