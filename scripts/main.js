@@ -5,8 +5,10 @@ function getIdPw(){
     {
     alert('안녕하세요 최현규님 환영합니다.')
     alert(id + '가 로그인함.');
+    localStorage.setItem('id',id);
     var myHeading = document.querySelector('h1');
-    myHeading.innerHTML = 'Cloude Service<br> Hello Choi';
+    var id = localStorage.getItem('id');
+    myHeading.innerHTML = id +'<br>Homepage';
     }
     else if(id==='' && ps==='')
     {
@@ -19,9 +21,6 @@ function getIdPw(){
     }
 }
 
-document.querySelector('h1').onclick = function (){
-    getIdPw();
-}
 var myImage = document.querySelector('img');
 myImage.onclick = function (){
     var src = myImage.getAttribute('src');
@@ -31,4 +30,9 @@ myImage.onclick = function (){
     else{
         myImage.setAttribute('src','images/firefox-icon.png');
     }
+}
+
+var myButton = document.querySelector('button');
+myButton.onclick = function (){
+    getIdPw();
 }
