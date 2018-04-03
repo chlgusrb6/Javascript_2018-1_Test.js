@@ -5,12 +5,32 @@
 <body>
     This is a test.
   <script>
-      function myFun(arg1,arg2){
-          alert(arguments.length);
-          return arg1 + arg2;
+      let a = 10;
+      a.x = 10;
+      console.log(a.x);
+      
+      let myObj = {};
+      myObj.a = 3;
+      myObj.b = 20;
+      myObj.c = 30;
+
+      delete myObj.c;
+
+      for(key in myObj){
+          document.write(
+              '<br>key : ' + key + ' = > ' + myObj[key] + '<br>'
+          );
       }
-      var a = myFun('abc','xyz','123');
-      alert(myFun.length);
+      //const {PI} = Math;  ===> 이름없는 객체 선언이 가능하다 스크립트안에서 사용가능
+      const PI = Math.PI;
+      console.log(PI);
+
+      // 객체와 일반 정수 데이터
+      //{property} , 객체안에 객체를 사용가능 ex: {{}}
+      // 변수 대신에 문자열로 표기하여도 자바는 오류가없다. a:30 , 'a':30 이런식
+      console.log(myObj.a);
+      console.log(myObj['a']);
+      // 두개는 동일한 결과
    </script>
 </body>
 </html>
