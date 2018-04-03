@@ -1,19 +1,31 @@
 <html>
+
 <head>
-  <meta charset="utf-8"/>
+    <meta charset="utf-8" />
 </head>
+
 <body>
     This is a test.
-  <script>
-      function Constructor() {}
-      let myFun = Constructor;
-      
-      let myObj = new Constructor();
-      
-      console.log(myFun.prototype);
-      console.log(myFun.__proto__);
-      console.log(myObj.prototype);
-      console.log(myObj.__proto__);
-   </script>
+    <script>
+        function Human() { }
+        Human.prototype.name = '정통';
+        Human.prototype.gender = '남자/여자';
+
+        function Korean() { }
+        Korean.prototype = new Human();
+        Korean.__proto__ = Human.prototype;
+        Korean.prototype.name = '정통2';
+        function Daejeon() { }
+        Daejeon.prototype = new Korean();
+        Daejeon.__proto__ = Korean.prototype;
+        let human = new Human();
+        let korean = new Korean();
+        let daejeon = new Daejeon();
+        console.log(human.name);
+        console.log(korean.name);
+        console.log(Daejeon.name);
+
+    </script>
 </body>
+
 </html>
