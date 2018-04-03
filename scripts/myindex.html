@@ -5,35 +5,11 @@
 <body>
     This is a test.
   <script>
-      let a = 10;
-      a.x = 10;
-      console.log(a.x);
-      
-      let myObj = {};
-      myObj.a = 3;
-      myObj.b = 20;
-      myObj.c = 30;
-
-      delete myObj.c;
-
-      for(key in myObj){
-          document.write(
-              '<br>key : ' + key + ' = > ' + myObj[key] + '<br>'
-          );
-      }
-      //const {PI} = Math;  ===> 이름없는 객체 선언이 가능하다 스크립트안에서 사용가능
-      const PI = Math.PI;
-      console.log(PI);
-
-      let date = new Date();
-      document.write('<br>현재 날짜:' + date + '<br>');
-
-      // 객체와 일반 정수 데이터
-      //{property} , 객체안에 객체를 사용가능 ex: {{}}
-      // 변수 대신에 문자열로 표기하여도 자바는 오류가없다. a:30 , 'a':30 이런식
-      console.log(myObj.a);
-      console.log(myObj['a']);
-      // 두개는 동일한 결과
+      let myFun = () => 'ABC'+'12345';
+      let myVar = myFun('abc','123');
+      console.log(myVar);
+// function 은 이름도 없어도된다 => 를 이용하여 arrow function 가능하다
+// 입력값이 없어도 된다 
    </script>
 </body>
 </html>
